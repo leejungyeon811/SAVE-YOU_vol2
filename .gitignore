@@ -1,0 +1,14 @@
+
+/api/venv/
+/api/venv2/
+/api/__pycache__/
+/api/deepfillv2-pytorch/
+/api/trained_model_ner/
+
+/client/node_modules
+/client/.pnp
+/client/.pnp.js
+
+# 기타
+*.log
+*.env

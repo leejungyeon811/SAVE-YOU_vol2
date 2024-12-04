@@ -1,0 +1,13 @@
+.text_component {
+    display: flex;
+    flex-direction: column; 
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh; 
+    gap: 16px; 
+    margin-top: 30px;
+}
+
+.text_header{
+    height: 25%;
+}

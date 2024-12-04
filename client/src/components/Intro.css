@@ -1,0 +1,102 @@
+
+
+.intro__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 16px;
+    /* margin-top: -70px; 원하는 만큼 위로 이동 */
+
+}
+
+@media (max-width: 800px) {
+    .intro__inner {
+        justify-content: center;
+    }
+}
+
+.intro__title {
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 800;
+    white-space: nowrap;
+    text-indent: -0.5vw;
+    letter-spacing: -0.3vw;
+    margin-bottom: 30px;
+
+    background: linear-gradient(90deg, black, rgb(197, 197, 197), black);
+    background-size: 600% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: highlightMove 10s linear infinite;
+}
+@keyframes highlightMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    .intro__title {
+        display: none;
+    }
+}
+
+.intro__span{
+    font-size: 5vw;
+    line-height: 1;
+    font-weight: 500;
+    white-space: nowrap;
+    text-indent: -0.5vw;
+    letter-spacing: -0.3vw;
+    margin-bottom: 30px;
+}
+
+
+.intro__lines {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; 
+    padding: 10px 0;
+}
+
+.intro__lines .line {
+    display: block;
+    width: 100%; 
+    height: 2px; 
+    background-color: #333; 
+    transition: all 0.3s ease;
+}
+
+.intro__lines .line:nth-child(1) { height: 2px; }
+.intro__lines .line:nth-child(2) { height: 4px; }
+.intro__lines .line:nth-child(3) { height: 6px; }
+.intro__lines .line:nth-child(4) { height: 8px; }
+.intro__lines .line:nth-child(5) { height: 10px; }
+.intro__lines .line:nth-child(6) { height: 12px; }
+.intro__lines .line:nth-child(7) { height: 14px; }
+
+.intro__lines.bottom .line {
+    width: 100%; /* 하단 선의 너비를 약간 더 작게 설정 */
+    background-color: #555; /* 색상 조정을 통해 구분감 줌 */
+}
+
+@media (max-width: 800px) {
+    .intro__lines.bottom .line {
+        display: block;
+    }
+}
+
+.intro__lines.bottom .line:nth-child(1) { height: 2px; }
