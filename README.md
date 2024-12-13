@@ -100,7 +100,8 @@ SNS에 게시된 사진과 글 속에서 무심코 노출된 개인정보는 범
 ## 👌출처
 1. [SegFormer 모델](https://huggingface.co/nvidia/segformer-b5-finetuned-cityscapes-1024-1024)
 2. [DeepFillv2 모델](https://github.com/nipponjo/deepfillv2-pytorch)
-
+3. [KLUE-BERT 모델](https://github.com/KLUE-benchmark/KLUE?tab=readme-ov-file)
+4. [KLUE-NER 데이터셋]
 ---
 
 ## 📂폴더 구조
@@ -108,7 +109,7 @@ SNS에 게시된 사진과 글 속에서 무심코 노출된 개인정보는 범
 ├── api                      # Flask 서버 (deepfillv2-pytorch 포함)
 │   ├── server.py
 │   ├── server_ner.py
-│   ├── KLUE-BERT_model_train_code_by_KLUE-NER.ipynb # 모델 훈련 코드
+│   ├── KLUE-BERT_model_train_code_by_KLUE-NER.ipynb # 모델 훈련 코드(실행시에는 필요 없음. 참고용)
 │   └── requirements.txt      # Python 3.11 이상의 가상환경 필요
 ├── client
 │   ├── public
